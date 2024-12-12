@@ -6,6 +6,7 @@ Template Name: Contact Us
  */
 ?>
 <?php get_header();?>
+    <section class="page-wrap">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -19,5 +20,5 @@ Template Name: Contact Us
 
         </div>
     </div>
-
+    </section>
 <?php get_footer();?>
