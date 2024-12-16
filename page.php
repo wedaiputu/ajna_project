@@ -2,9 +2,10 @@
 
 <section class="page-wrap">
     <div class="container">
-        <?php get_template_part('includes/section', 'content');?>
-    </div>
+            <div class="col-md-6">
+                <?php get_template_part('includes/section', 'content');?>
+            </div>
+        </div>
 </section>
-    
 
 <?php get_footer();?>

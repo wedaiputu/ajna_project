@@ -16,7 +16,7 @@
                 array(
                     'theme_location' => 'top-menu',
                     'menu_class' => 'top-bar',
-                    // 'menu' => 'Top Bar'
+                    'menu' => 'Top Bar'
                 )
             );
         ?>
