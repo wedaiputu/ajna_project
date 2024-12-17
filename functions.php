@@ -12,11 +12,13 @@ add_action('wp_enqueue_scripts', 'load_css');
 function load_js(){
     wp_register_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, false);
     wp_enqueue_script('bootstrapjs');
-    
-
 }
 
-add_action('wp_enqueue_scripts', 'load_js');
+function enqueue_poppins_font() {
+    wp_enqueue_style('poppins-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap', false);
+}
+
+add_action('wp_enqueue_scripts', 'load_js', 'enqueue_poppins_font');
 
 add_theme_support('menus');
 
@@ -31,6 +33,7 @@ register_nav_menus(
         'footer-menu' => 'Footer Menu Location'
     )
 );
+
 
 /** 
  * register custom post type
