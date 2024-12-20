@@ -21,7 +21,7 @@ $front_image = get_sub_field('front_image');
         <!-- Left Column: Title, Description, Front Image, and Thumbnails -->
         <div class="col-xxl-7 col-lg-7 col-md-12 d-flex flex-column justify-content-between">
           <!-- Title and Description -->
-          <h2 class="text-uppercase fw-bold mb-4" style="letter-spacing: 1px; color: #333;">
+          <h2 class="text-uppercase mb-4 text-muted" style="letter-spacing: 1px; color: #333;">
             <?= $title; ?>
           </h2>
           <?php if ($description) : ?>
@@ -32,7 +32,8 @@ $front_image = get_sub_field('front_image');
 
           <!-- CTA Section -->
           <div class="d-flex justify-content-start align-items-center gap-5 mb-4">
-            <h3 class="fw-bold text-dark"><?= $cta_title; ?></h3>
+            <h3 class="text-muted"><?= $cta_title; ?></h3>
+            <hr class="mx-3" style="border-top: 1px solid #000; height: 1px; width: 20%;"/>
             <a href="<?= $cta_link['url']; ?>" class="btn btn-dark text-uppercase" style="background-color: #3d192d; border: none;">
               <?= $cta_link['title']; ?>
             </a>

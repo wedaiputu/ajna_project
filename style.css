@@ -6,3 +6,6 @@ Description: A real estate WordPress theme
 Version: 1.0
 */
 
+body {
+    font-family: Poppins;
+}
